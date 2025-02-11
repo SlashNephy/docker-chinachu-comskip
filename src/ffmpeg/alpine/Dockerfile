@@ -25,7 +25,7 @@ ARG FFMPEG_VERSION
 
 RUN git clone https://github.com/FFmpeg/FFmpeg -b "${FFMPEG_VERSION}" --recursive
 
-FROM --platform=$TARGETPLATFORM public.ecr.aws/docker/library/alpine:3.18.11@sha256:dd60c75fba961ecc5e918961c713f3c42dd5665171c58f9b2ef5aafe081ad5a0
+FROM --platform=$TARGETPLATFORM public.ecr.aws/docker/library/alpine:3.21.2@sha256:56fa17d2a7e7f168a043a2712e63aed1f8543aeafdcee47c58dcffe38ed51099
 ARG CPUS
 ARG RUNTIMES
 ARG DEPENDENCIES
